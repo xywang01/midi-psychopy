@@ -52,7 +52,9 @@ import pandas as pd
 from midi_controller import MidiController
 
 # Create an instance of MidiController
-midi_controller = MidiController(device_name='UM-ONE')
+# Note that globalClock is a standard PsychoPy variable that can be used to synchronize the MIDI data with the
+# PsychoPy global timer.
+midi_controller = MidiController(device_name='UM-ONE', psychopy_global_timer=globalClock)
 
 # Initialize a DataFrame to store the collected MIDI data
 keypress_data = pd.DataFrame()
@@ -65,7 +67,7 @@ trial_count = 0
 # (i.e., participant is the default name for the participant ID defined in the "Experiment Info" section of the "Basic" 
 # tab in the PsychoPy GUI's "Properties" window).
 par_id = expInfo['participant']  
-save_dir = os.path.abspath(f'./data_keypress')
+save_dir = os.path.abspath(f'./')
 file_name = f'par_{par_id}.csv'
 save_path = f'{save_dir}/{file_name}'
 ```
