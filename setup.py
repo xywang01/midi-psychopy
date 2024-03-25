@@ -10,7 +10,7 @@ setup(
     version='0.0.1',
     description='A Python interface for asynchronous MIDI data collection using PsychoPy',
     url='https://github.com/xywang01/midi-psychopy',
-    download_url='',
+    download_url='https://github.com/xywang01/midi-psychopy/archive/refs/tags/0.0.1.tar.gz',
     author='X. Michael Wang, Centre for Motor Control, University of Toronto, Faculty of Kinesiology and Physical Education',
     author_email='michaelwxy.wang@utoronto.ca',
     license='MIT',
